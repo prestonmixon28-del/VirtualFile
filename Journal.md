@@ -1,2 +1,4 @@
 # Journal
 The base case is when the item is a file, so the method returns 1. The general case is a folder, where the method checks the items inside it. Each call gets closer to a file, so eventually the recursion stops.
+
+findLargestFileRecursive returns null when there are no files because there is no longest file in return. The folder checks each reult before comparing sizes, which prevents an error.
