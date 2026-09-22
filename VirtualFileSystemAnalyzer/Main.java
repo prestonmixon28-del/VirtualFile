@@ -23,6 +23,7 @@ public class Main {
         root.addItem(pictures);
 
         int totalFiles = FileSystemAnalyzer.countFilesRecursive(root);
+        int iterativeFiles = FileSystemAnalyzer.countFilesIterative(root);
 int totalSize = FileSystemAnalyzer.calculateTotalSizeRecursive(root);
 FileItem largestFile = FileSystemAnalyzer.findLargestFileRecursive(root);
 
@@ -30,5 +31,6 @@ System.out.println("Total number of files: " + totalFiles);
 System.out.println("Total storage: " + totalSize + " KB");
 System.out.println("Largest file: " + largestFile.getName());
 System.out.println("Largest file size: " + largestFile.getSizeKB() + " KB");
+System.out.println("Iterative file count: " + iterativeFiles);
     }
 }
